@@ -4,7 +4,7 @@ import joblib
 import numpy as np
 
 app = Flask(__name__)
-CORS(app, origins=["https://credit-card-fraud-detector-alpha.vercel.app/"])
+CORS(app, origins=["https://credit-card-fraud-detector-alpha.vercel.app"])
 
 # Load models and scaler
 classifier = joblib.load('logistic_model.pkl')
